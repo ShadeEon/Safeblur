@@ -1,0 +1,583 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    display: flex;
+}
+
+.nav__main-container{
+    height: 100vh;
+    width: 250px;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right: 1px solid #e5e5e5;
+}
+
+.nav__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav__logo a{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+    color: #191919;
+}
+
+.nav__logo a:hover{
+    color: #333333;
+}
+
+.nav__links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inactive{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #191919;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.inactive:hover{
+    color:white;
+    background: #b9b8b8;
+    border-radius: 12%;
+}
+
+.nav__links i{
+    font-size: 24px;
+}
+
+.iactive {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 12%;
+}
+
+.iactive:hover{
+    color:#191919;
+    background: #b9b8b8;
+    border-radius: 12%;
+}
+
+.nav__profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.nav__profile #profile-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #191919;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.nav__profile #profile-btn img{
+    width: 32px;
+    border-radius: 50%;
+}
+
+.nav__profile a:hover{
+    background: #e5e5e5;
+    border-radius: 5px;
+}
+
+.user__btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.user__btn a{
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #191919;
+    border-radius: 5px;
+}
+
+.user__btn a:hover{
+    background: #333333;
+}
+
+.user-post__main-container{
+    height: 100vh;
+    width: 100%;
+    padding: 30px 20px;
+    overflow: auto;
+}
+
+.user-post__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-post__form{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 15px;
+    border-radius: 10px;
+    background: #e5e5e5;
+}
+
+.profile-description{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.profile-description img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile-description input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.user-post__btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-post__btn button{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background: #191919;
+    color: #fff;
+}
+
+.user-post__btn button:hover{
+    background: #333333;
+    cursor: pointer;
+}
+
+.upload-btn{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.post-btn{
+    width: 100%;
+}
+
+.user-posted__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.user-posted__content{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 1rem;
+    padding: 15px;
+    border-radius: 10px;
+    background: #e5e5e5;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user img{
+    width: 32px;
+    border-radius: 50%;
+}
+
+.user a{
+    font-size: 16px;
+    color: #191919;
+    font-weight: 600;
+}
+
+.posted-img{
+    width: 100%;
+}
+
+.posted-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.profile-caption{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.profile-caption a{
+    color: #191919;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.profile-caption p{
+    color: #191919;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Loading screen styles */
+.loading-screen {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Display the screen when active */
+.loading-screen.active {
+    display: flex;
+}
+
+/* Loading content container */
+.loading-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Loading spinner */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px; /* Add space between the spinner and text */
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.process-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.process-btn i {
+    margin-right: 5px;
+}
+
+/* Hover effect */
+.process-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Image preview container styles */
+.image-preview {
+    display: flex;
+    flex-wrap: wrap; /* Allow multiple images to wrap */
+    gap: 10px; /* Space between images */
+    margin-top: 10px;
+    width: 100%;
+    max-width: 800px; /* Increased width to accommodate multiple images */
+    height: auto;
+    text-align: center;
+}
+
+/* Style for each preview image container */
+.image-preview .preview-item {
+    position: relative;
+    width: 100px; /* Limit each preview size */
+    height: 100px; /* Make each preview square */
+    overflow: hidden; /* Hide any overflow */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the preview image */
+.image-preview .preview-item img {
+    width: 100%; /* Make the preview image fill the container */
+    height: 100%;
+    object-fit: cover; /* Ensure the image maintains aspect ratio and covers the container */
+}
+
+/* Style for the Remove button */
+.remove-btn {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 60%;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.remove-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#notification-container {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .notification {
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    font-weight: 600;
+  }
+  
+  .success {
+    background-color: #cff6cf;
+  }
+  
+  .error {
+    background-color: #ffc6c6;
+  }
+
+  /* Base styles for the login button */
+/* Basic button styling */
+.login-btn {
+    display: flex;
+    align-items: center; /* Align text and button in a row */
+    justify-content: space-between; /* Space out the text and the button */
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 4px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.1s ease; /* Smooth transition for background color and click effect */
+    outline: none;
+}
+
+/* Styling for the text part of the button */
+.login-btn .text {
+    font-weight: bold;
+}
+
+/* The button inside the toggle */
+.login-btn .button {
+    width: 30px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+/* Inner circle toggle */
+.login-btn .button::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Hover effect */
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+/* Active state (clicked or pressed) */
+.login-btn:active {
+    background-color: #388e3c;
+    transform: scale(0.95); /* Slight shrink to mimic pressing effect */
+}
+
+/* Toggle effect when toggled (active state) */
+.login-btn.toggled {
+    background-color: #f44336; /* Red background for "toggled" state */
+}
+
+/* Hover effect when toggled */
+.login-btn.toggled:hover {
+    background-color: #e53935; /* Darker red on hover when toggled */
+}
+
+/* Toggle effect when clicked or "pressed" */
+.login-btn.toggled:active {
+    background-color: #c62828; /* Even darker red when pressed */
+    transform: scale(0.95); /* Shrink effect for toggle button */
+}
+
+/* Toggle effect for button when toggled */
+.login-btn.toggled .button::before {
+    transform: translateX(10px); /* Move the inner circle to the right when toggled */
+    background-color: red; /* White circle for the toggled state */
+}
+
+/* Adjust the appearance of the text when toggled */
+.login-btn.toggled .text {
+    color: white; /* Text color change when toggled */
+}
+
+.contactus_main-container{
+    height: 100vh;
+    width: 100%;
+    padding: 30px 20px;
+    overflow: auto;
+}
+
+.contactus__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactus__form-container{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 15px;
+    border-radius: 10px;
+    background: #e5e5e5;
+}
+
+.labeltags{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputtags{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+textarea{
+    width: 460px;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Button Styling */
+.contactus__btn button {
+    width: 100%;
+    padding: 12px;
+    background: #646464;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contactus__btn button:hover {
+    color: #191919;
+    background: #aeafaf;
+}

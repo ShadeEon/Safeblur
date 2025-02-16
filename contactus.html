@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instablurred</title>
+    <link rel="stylesheet" href="css/igstyles.css">
+    <link rel="icon" type="image/png" href="favig.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+    <nav class="nav__main-container">
+        <div class="nav__container">
+            <div class="nav__logo">
+                <a href="index.html"><i class="fa-solid fa-camera-retro" aria-hidden="true"></i>Instablurred</a>
+            </div>
+            <div class="nav__links">
+                <a href="igindex.html" class="inactive"><i class="fa-solid fa-feed"></i>Feed</a>
+                <a href="profile.html" class="inactive"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>Profile</a>
+                <a href="contactus.html" class="iactive"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Contact</a>
+                <a href="index.html" class="inactive"><i class="fa-solid fa-gears" aria-hidden="true"></i>Test SB</a>               
+            </div>
+        </div>
+        <div class="nav__profile">
+            <button class="login-btn">
+                <span class="text">ON</span>
+                <span class="button"></span>
+            </button>
+            <hr> 
+            <a href="profile.html" id="profile-btn"><img src="image/fire.svg" alt="">Jeremie</a>
+            <div class="user__btn">
+                <p>&#169 2025 Safeblur</p>
+            </div>
+        </div>
+    </nav>    
+
+    <section class="contactus_main-container">
+        <div class="contactus__container">
+            <form class="contactus__form-container">
+                <h2>Contact Us</h2>
+                <p>Feel free to reach out to us with any questions or concerns.</p>
+                
+                <div class="inputtags">
+                    <div class="labeltags">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="labeltags">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="labeltags">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                
+                <div class="contactus__btn">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

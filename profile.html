@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Profile Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #e4e6eb;
+        }
+        .profile-header {
+            position: relative;
+            text-align: center;
+            background-color: #242526;
+            padding: 20px;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #3a3b3c;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cover-photo {
+            width: 100%;
+            height: 200px;
+            background: gray;
+        }
+        .profile-info {
+            position: relative;
+            margin-top: -50px;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #242526;
+        }
+        .profile-buttons button {
+            background: #3a3b3c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .profile-nav {
+            background: #242526;
+            padding: 10px;
+            text-align: center;
+        }
+        .profile-nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .profile-nav li {
+            margin: 0 15px;
+        }
+        .profile-nav a {
+            text-decoration: none;
+            color: #e4e6eb;
+            font-weight: bold;
+        }
+        .profile-main {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .profile-sidebar {
+            width: 30%;
+            background: #242526;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .profile-posts {
+            width: 60%;
+            padding: 20px;
+        }
+
+        .post-box{
+            background: #242526;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .post-box-row {
+            background: #242526;
+            padding: 10px;
+            border-radius: 10px;
+            gap: 4px;
+            display: flex;
+            align-items: center;
+        }
+
+        .post-box-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .small-profile-pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .profile-main {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-sidebar, .profile-posts {
+                width: 90%;
+            }
+        }
+        button{
+            font-size: 10px;
+            font-weight: 500;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #191919;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="profile-header">
+        <button class="back-button" onclick="history.back()">&#8592; Back</button>
+        <div class="cover-photo"></div>
+        <div class="profile-info">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>John Doe</h1>
+            <p>1.1K Friends</p>
+        </div>
+    </header>
+    
+    <nav class="profile-nav">
+        <ul>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Friends</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+    </nav>
+    
+    <main class="profile-main">
+        <aside class="profile-sidebar">
+            <h2>Intro</h2>
+            <p>Web Developer | Tech Enthusiast | Gamer</p>
+        </aside>
+        
+        <section class="profile-posts">
+            <div class="post-box">
+                <div class="post-box-row">
+                    <img src="images/profile.jpg" alt="Profile Picture" class="small-profile-pic">
+                    <input type="text" placeholder="What's on your mind?">
+                    <button class="upload-btn" onclick="document.getElementById('imageUpload').click()"><i class="fa-solid fa-image"></i>Photo</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
